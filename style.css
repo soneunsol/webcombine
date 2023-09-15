@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Neo둥근모';
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a6460;
+    padding-top: 50px;
+}
+
+h1{
+    width: 280px;
+    margin:  30px  auto;
+    color: white;
+}
+
+.up_box{
+    width: calc(100vw - 10%);
+    height: 220px;
+    background-color: rgb(43, 203, 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#result_area{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#chance_area{
+    font-size: 25px;
+}
+
+
+
+.under_box{
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#user_input{
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+    border-color: rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.botton{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#play_button{
+    background-color: rgb(207, 41, 12);
+    color: white;
+}
+
+#reset_button{
+    background-color: rgb(69, 69, 212);
+    color: white;
+}
+
+#play_button, #reset_button{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+span{
+    background-color: rgb(255, 240, 25);
+}

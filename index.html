@@ -1,54 +1,134 @@
-            <?
-            /*접속기기를 인식하는 스크립트*/
-            if(!function_exists("is_moblile"))
-            {
-              function is_moblile()
-              {
-                $connet_m = $_SERVER['HTTP_USER_AGENT'];
-                if(strpos( $connet_m,  "iPhone", 0) > -1)
-                {
-                  return "아이폰";
-                }  
-  
-                if(strpos( $connet_m,  "Android", 0) > -1)
-                {
-                  return "안드로이드";
-                }      
-                return 0;
-              }  
-            }  
-
-            /*pc폴더로 갈지 mobile폴더로 갈지의 조건문 형태*/
-            if($PC_MODE == 'true') $_SESSION['PC_MODE'] = "true";
-
-            if(is_moblile() && $_SESSION['PC_MODE'] != "true")
-            {
-            /*모바일폴더로 간다면 모바일 폴더의 페이지주소입력*/
-              header("location:https://github.com/soneunsol/webcombine/mobile.html");
-              /* 본인FTP ID로 넣기 */
-            }
-
-            ?>
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title> PC용 </title>
-        <!--닷홈, 파일질라 or GitHub: html 2개, 아이콘 함께 업로드-->
-        <style>
-            *{padding: 0; margin: 0;}
-            body{ background-color: #ff8f2f; color: #fff;}
-            h1{ padding-top: 100px; text-align: center;}
-        </style>
-    </head>
-    
-    <body>
-        
-            <h1>PC접속 화면입니다. <br />
-                모바일 기기 접속 시 화면 전환 되어집니다.</h1>
-        
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16-17. 종합 레이아웃 예제1 - float_Alfredo gonzales </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <a href="#" class="logo">Alfredo<br />gonzales</a>
+        <ul>
+            <li> <a href="#"><img src="images/menu01.png" alt="" />home</a> </li>
+            <li> <a href="#"><img src="images/menu02.png" alt="" />shop</a> </li>
+            <li> <a href="#"><img src="images/menu03.png" alt="" />custombox</a> </li>
+            <li> <a href="#"><img src="images/menu04.png" alt="" />blog</a> </li>
+            <li> <a href="#"><img src="images/menu05.png" alt="" />story</a> </li>
+        </ul>
+    </header>
+    <!--//header-->
+
+
+    <!--mainBg-->
+    <section id="mainBg">
+        <div class="left">
+            <img src="images/header01.jpg" alt="" />
+        </div>
+
+        <div class="right">
+            <img src="images/side01.jpg" alt="" />
+            <div class="tbox">
+                <p>DESIGN YOUR OWNSOCK</p>
+                <h1>THE WORKSHOP</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="tbox">
+                <p>SELF SERVICE</p>
+                <h1>THE WORKSHOP</h1>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+    <!--//mainBg-->
+
+
+    <!--section01--->
+    <section id="section01">
+        <div class="left">
+            <img src="images/banner_01.jpg" alt="" />
+            <div class="ibox">
+                <iframe src="https://player.vimeo.com/video/104136276" width="784" height="480" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/banner_02.jpg" alt="" />
+        </div>
+    </section>
+    <!--//section01--->
+
+
+    <!--section02-->
+    <section id="section02">
+        <img src="images/banner_03.jpg" alt=" " />
+        <img src="images/banner_04.jpg" alt=" " />
+        <img src="images/banner_05.jpg" alt=" " />
+    </section>
+    <!--//section02-->
+
+
+    <!--footer-->
+    <footer>
+        <div class="left"><!--배경이미지가 나타날 자리--> </div>
+        <div class="right">
+            <div class="ibox">
+                <iframe src="https://player.vimeo.com/video/58451361" width="800" height="340" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
+            <form>
+                <div class="center">
+                    <label>SIGN UP</label>
+                    <input type="email" placeholder="YOUR EMAIL ADDRESS" name="em" />
+                    <button type="button">&#62;</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footerlogo">
+            Alfredo<br />gonzales
+        </div>
+    </footer>
+    <!--//footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>
